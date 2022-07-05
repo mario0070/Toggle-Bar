@@ -6,7 +6,7 @@
 
 
 body{
-    background:linear-gradient(aquamarine,tomato,black) ;
+    background:tomato ;
 }
 
 .hr{
@@ -70,6 +70,7 @@ li{
 
 .page.valid{
     margin-left: 250px;
+    opacity: 0.5;
 }
 
 .last.valid{
@@ -148,11 +149,38 @@ h1,p{
 
 footer{
     background-color: whitesmoke;
-    margin: 1em;
+    margin: 2em;
+    margin-bottom: 0;
     padding: -1em;
-    margin-left: 0px;
     font-weight: 900;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: space-around;
+}
+
+@media  screen and (max-width:900px) {
+
+   
+
+    footer{
+        display: inline-block;
+        background-color: whitesmoke;
+        margin-bottom: 0em;
+        margin-right: 0;
+        /* margin-left: 33px; */
+        
+    }
+
+    button{
+        width: 50%;
+    }
+
+    h1{
+        display: block;
+        width: 100%;
+    }
+
+
+
+    
 }
